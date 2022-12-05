@@ -23,5 +23,10 @@ public class studentController {
     {
         return "this is gallery ";
     }
+    @GetMapping("/home")
+    public String home()
+    {
+        return "this is the home page ";
+    }
 
 }
