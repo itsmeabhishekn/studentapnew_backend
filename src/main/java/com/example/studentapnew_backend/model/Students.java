@@ -13,19 +13,29 @@ public class Students {
     @GeneratedValue
     private int id;
     private String name;
-    private String admno;
-    private int rollno;
-    private  String collegename;
+    private String admnNo;
+    private int rollNo;
+    private  String clgName;
+    private String parentName;
+    private String parentMobNo;
+    private String username;
+    private String password;
+    private String cpassword;
 
     public Students() {
     }
 
-    public Students(int id, String name, String admno, int rollno, String collegename) {
-        this.id = id;
-        this.name = name;
-        this.admno = admno;
-        this.rollno = rollno;
-        this.collegename = collegename;
+    public Students(int id, String name, String admnNo, int rollNo, String clgName, String parentName, String parentMobNo, String username, String password, String cpassword) {
+        this.id =      id;
+        this.name =    name;
+        this.admnNo =  admnNo;
+        this.rollNo =  rollNo;
+        this.clgName = clgName;
+        this.parentName = parentName;
+        this.parentMobNo = parentMobNo;
+        this.username = username;
+        this.password = password;
+        this.cpassword=cpassword;
     }
 
     public int getId() {
@@ -44,27 +54,67 @@ public class Students {
         this.name = name;
     }
 
-    public String getAdmno() {
-        return admno;
+    public String getAdmnNo() {
+        return admnNo;
     }
 
-    public void setAdmno(String admno) {
-        this.admno = admno;
+    public void setAdmnNo(String admnNo) {
+        this.admnNo = admnNo;
     }
 
-    public int getRollno() {
-        return rollno;
+    public int getRollNo() {
+        return rollNo;
     }
 
-    public void setRollno(int rollno) {
-        this.rollno = rollno;
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
     }
 
-    public String getCollegename() {
-        return collegename;
+    public String getClgName() {
+        return clgName;
     }
 
-    public void setCollegename(String collegename) {
-        this.collegename = collegename;
+    public void setClgName(String clgName) {
+        this.clgName = clgName;
+    }
+
+    public String getParentName() {
+        return parentName;
+    }
+
+    public void setParentName(String parentName) {
+        this.parentName = parentName;
+    }
+
+    public String getParentMobNo() {
+        return parentMobNo;
+    }
+
+    public void setParentMobNo(String parentMobNo) {
+        this.parentMobNo = parentMobNo;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getCpassword() {
+        return cpassword;
+    }
+
+    public void setCpassword(String cpassword) {
+        this.cpassword = cpassword;
     }
 }
